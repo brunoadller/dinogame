@@ -128,7 +128,7 @@ const Page = () => {
 
         <div className="w-full my-[10px] flex justify-around  md:flex-col">
           <InfoItem label='Tempo' value={formatTimeElapsed(timeElapsed)}/>
-          <InfoItem label='Movimentos' value = {moveCount} />
+          <InfoItem label='Movimentos' value = {moveCount.toString()} />
         </div>
 
       <Button label='Reiniciar' icon={RestartIcon} onClick={resetAndCreateGrid}/>
